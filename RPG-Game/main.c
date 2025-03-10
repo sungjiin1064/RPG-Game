@@ -13,10 +13,10 @@ int playerY = 10;
 int monsterX = 30;
 int monsterY = 10;
 
-int playerHealth = 100;
-int monsterHealth = 50;
-int playerAttack = 9;
-int monsterAttack = 4;
+int playerHealth = 10;
+int monsterHealth = 5;
+int playerAttack = 1;
+int monsterAttack = 10;
 
 void resetMonster()
 {
@@ -67,10 +67,7 @@ int main()
 
 			if (playerHealth <= 0)
 			{
-				setCursorPos(playerX + 6, playerY - 5);
-				printf("사망하였습니다.");
-				setCursorPos(playerX + 8, playerY + 2);
-				printf("게임 종료\n");
+				GameOver();
 				break;
 			}
 
