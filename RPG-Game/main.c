@@ -31,7 +31,7 @@ void monsterDie(int x, int y)
 		printf("(x . x)");
 		//setCursorPos(monsterX + 2, monsterY - 2);
 		//printf("- 사  망 -");
-	
+
 }
 
 void resetMonster()
@@ -74,6 +74,10 @@ int main()
 			printf("VS");
 
 			playerHealth -= monsterAttack;
+			if (playerHealth < 0)
+			{
+				playerHealth = 0;
+			}
 
 			monsterHealth -= playerAttack;
 			if (monsterHealth < 0)
@@ -86,16 +90,20 @@ int main()
 
 			if (monsterHealth <= 0)
 			{
-				
+				setCursorPos(monsterX + 2, monsterY - 2);
+				printf("슬라임 체력 : %d", monsterHealth);
+				setCursorPos(playerX - 4, playerY - 2);
+				printf("기사 체력: %d", playerHealth);
 
 				monsterDie(monsterX, monsterY);
-				Sleep(10000);
+				Sleep(1000);
 				resetMonster();
 
 			}
 
 			if (playerHealth <= 0)
 			{
+				
 				GameOver();
 				break;
 			}

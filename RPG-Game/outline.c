@@ -7,22 +7,14 @@ void line()
 	printf("■             ★                                                                                     ■\n");
 	printf("■                                                                                                    ■\n");
 	printf("■                                                                                                    ■\n");
-	printf("■                                                            _________________                                        ■\n");
-	printf("■                                                           |                 |                             ■\n");
-	printf("■                                                           |                 |                             ■\n");
-	printf("■                                                           |                 |                                 ■\n");
-	printf("■                                                           |                 |                                ■\n");
-	printf("■                                                           |                 |                                ■\n");
-	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
-
-	setCursorPos(10, 57);
-	printf("    - -\n");
-	setCursorPos(10, 58);
-	printf("  -     -\n");
-	setCursorPos(10, 59);
-	printf(" -        -\n");
-	setCursorPos(10, 60);
-	printf("-           -\n");
+	printf("■                                                            _________________                       ■\n");
+	printf("■                                                           |                 |                      ■\n");
+	printf("■                                                           |                 |                      ■\n");
+	printf("■                                                           |                 |                      ■\n");
+	printf("■                                                           |                 |                      ■\n");
+	printf("■                                                           |                 |                      ■\n");
+	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+		
 }
 
 void GameOver()
@@ -39,7 +31,7 @@ void GameOver()
 	printf("■                                                                                                    ■\n");
 	printf("■                                                                                                    ■\n");
 	printf("■                                                                                                    ■\n");
-	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 
 	
 	setCursorPos(8,2);
@@ -76,15 +68,15 @@ void GameStart()
 	    printf("■                                                                                                    ■\n");
 	    printf("■                                                                                                    ■\n");
 	    printf("■                                                                                                    ■\n");
-		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 					
-		setCursorPos(10, 5);
+		setCursorPos(20, 5);
 		printf("게임시작\n");
 
-		setCursorPos(10, 6);
+		setCursorPos(20, 6);
 		printf("게임종료\n");
 	
-		setCursorPos(20, mouseY);
+		setCursorPos(30, mouseY);
 		printf("<--( ''  )\n");
 
 
