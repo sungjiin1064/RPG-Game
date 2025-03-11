@@ -74,7 +74,11 @@
               "RelativeDocumentMoniker": "outline.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\RPG-Game\\RPG-Game\\outline.c",
               "RelativeToolTip": "outline.c",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAB0AAAA",
+=======
+              "ViewState": "AgIAAFoAAAAAAAAAAAAIwBUAAAAWAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-10T06:18:16.636Z",
               "EditorCaption": ""
@@ -89,8 +93,7 @@
               "RelativeToolTip": "outline.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-10T06:18:04.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T06:18:04.131Z"
             },
             {
               "$type": "Document",
@@ -100,7 +103,11 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\RPG-Game\\RPG-Game\\main.c",
               "RelativeToolTip": "main.c",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAFYAAAAAAAAAAAAAAHEAAAACAAAA",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-10T06:16:37.86Z",
               "EditorCaption": ""
