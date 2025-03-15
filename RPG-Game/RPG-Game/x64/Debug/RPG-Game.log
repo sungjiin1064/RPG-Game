@@ -1,5 +1,4 @@
 ﻿  main.c
-  respawn.c
   unitAnimation.c
   코드를 생성하고 있습니다...
-  RPG-Game.vcxproj -> C:\Users\user\Desktop\RPG-Game\RPG-Game\x64\Debug\RPG-Game.exe
+C:\Users\user\Desktop\RPG-Game\RPG-Game\unitAnimation.c(2,1): error C1004: 예기치 않은 파일의 끝이 나타났습니다.
