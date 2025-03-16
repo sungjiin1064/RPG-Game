@@ -8,4 +8,4 @@ void playerStandMode();
 
 void playerAttackMode();
 
-void slime
+void slime;

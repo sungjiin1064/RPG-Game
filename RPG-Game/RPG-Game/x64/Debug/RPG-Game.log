@@ -1,4 +1,4 @@
-﻿  main.c
-  unitAnimation.c
-  코드를 생성하고 있습니다...
-C:\Users\user\Desktop\RPG-Game\RPG-Game\unitAnimation.c(2,1): error C1004: 예기치 않은 파일의 끝이 나타났습니다.
+﻿  unitAnimation.c
+C:\Users\user\Desktop\RPG-Game\RPG-Game\unitAnimation.h(11,6): error C2182: 'slime': 이 'void' 사용은 유효하지 않습니다.
+  (소스 파일 'unitAnimation.c'을(를) 컴파일하는 중)
+  
