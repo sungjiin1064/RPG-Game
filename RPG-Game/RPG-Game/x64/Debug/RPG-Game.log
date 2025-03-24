@@ -1,4 +1,2 @@
 ﻿  unitAnimation.c
-C:\Users\user\Desktop\RPG-Game\RPG-Game\unitAnimation.h(11,6): error C2182: 'slime': 이 'void' 사용은 유효하지 않습니다.
-  (소스 파일 'unitAnimation.c'을(를) 컴파일하는 중)
-  
+  RPG-Game.vcxproj -> C:\Users\user\Desktop\RPG-Game\RPG-Game\x64\Debug\RPG-Game.exe
