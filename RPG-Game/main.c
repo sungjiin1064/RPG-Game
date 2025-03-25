@@ -1,3 +1,4 @@
+#if 0
 #include <stdio.h>
 #include <Windows.h>
 #include <stdbool.h>
@@ -74,3 +75,4 @@ int main()
 		}
 	}
 }
+#endif // 0

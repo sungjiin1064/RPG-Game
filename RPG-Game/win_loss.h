@@ -1,3 +1,4 @@
+#if 0
 #include <stdio.h>
 
 int playerX;
@@ -15,3 +16,4 @@ void playerDie(int x, int y);
 
 void monsterWin(int x, int y);
 void monsterDie(int x, int y);
+#endif // 0

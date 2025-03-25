@@ -1,3 +1,4 @@
+#if 0
 #include "battle.h"
 
 void inBattle()
@@ -33,3 +34,4 @@ void inBattle()
 	}
 	attacking++;
 }
+#endif // 0

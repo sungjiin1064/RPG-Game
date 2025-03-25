@@ -1,3 +1,4 @@
+#if 0
 #include "respawn.h"
 
 void respawnSlime()
@@ -13,3 +14,5 @@ void respawnKingSlime()
 	monsterY = 10;
 	monsterHealth = 100;
 }
+
+#endif // 0

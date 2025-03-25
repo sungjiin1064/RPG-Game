@@ -1,3 +1,4 @@
+#if 0
 
 int playerX;
 int playerY;
@@ -10,3 +11,4 @@ int playerAttack;
 int monsterAttack;
 
 void inBattle();
+#endif // 0

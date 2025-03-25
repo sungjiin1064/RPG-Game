@@ -1,3 +1,4 @@
+#if 0
 #include "outline.h"
 
 void line()
@@ -14,7 +15,7 @@ void line()
 	printf("■                                                           |                 |                      ■\n");
 	printf("■                                                           |                 |                      ■\n");
 	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
-		
+
 }
 
 void GameOver()
@@ -33,18 +34,18 @@ void GameOver()
 	printf("■                                                                                                    ■\n");
 	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 
-	
-	setCursorPos(8,2);
+
+	setCursorPos(8, 2);
 	printf("    --       --         -    -      - - -        --     -         -  - - -   - - -\n");
-	setCursorPos(8,3);
+	setCursorPos(8, 3);
 	printf("  -         -  -       - -  - -     -          -    -    -       -   -       -    -\n");
-	setCursorPos(8,4);
+	setCursorPos(8, 4);
 	printf(" -  ---    - -- -     -   - -  -    - - -    -        -   -     -    - - -   - - -\n");
-	setCursorPos(8,5);
+	setCursorPos(8, 5);
 	printf(" -    -   -      -   -     -    -   -          -    -      -   -     -       -   -\n");
 	setCursorPos(8, 6);
 	printf("   ----  -        -  -          -   - - -  =     --          -       - - -   -    -\n");
-	setCursorPos(40,14);
+	setCursorPos(40, 14);
 	printf("\n");
 
 }
@@ -57,25 +58,25 @@ void GameStart()
 	{
 
 		system("cls");
-    	printf("■                                                                                                    ■\n");
-    	printf("■                                                                                                    ■\n");
-    	printf("■                                                                                                    ■\n");
-    	printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
-	    printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
+		printf("■                                                                                                    ■\n");
 		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
-					
+
 		setCursorPos(20, 5);
 		printf("게임시작\n");
 
 		setCursorPos(20, 6);
 		printf("게임종료\n");
-	
+
 		setCursorPos(30, mouseY);
 		printf("<--( ''  )\n");
 
@@ -104,7 +105,7 @@ void GameStart()
 				{
 					return;
 				}
-				else if(mouseY ==6)
+				else if (mouseY == 6)
 				{
 					system("cls");
 					setCursorPos(8, 2);
@@ -131,3 +132,5 @@ void GameStart()
 	}
 	return;
 }
+
+#endif // 0

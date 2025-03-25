@@ -1,3 +1,4 @@
+#if 0
 
 int playerX;
 int playerY;
@@ -9,3 +10,4 @@ void playerStandMode();
 void playerAttackMode();
 
 void slime();
+#endif // 0

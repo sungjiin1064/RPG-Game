@@ -1,3 +1,4 @@
+#if 0
 #include "Win_loss.h"
 
 void playerWin(int x, int y)
@@ -43,3 +44,4 @@ void monsterDie(int x, int y)
 	setCursorPos(x, y);
 	printf(" (x . x)");
 }
+#endif // 0
