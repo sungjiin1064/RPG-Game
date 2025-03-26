@@ -1,5 +1,7 @@
-#if 0
 #include "Battle.h"
+#include "Character.h"
+
+
 
 void ShowBattle()
 {
@@ -16,30 +18,33 @@ void ShowBattle()
 		setCursorPos(player.x, player.y);
 		printf("%s", player.action1);
 
-		setCursorPos(monster.x, monster.y);
-		printf("%s", monster.action1);
+		setCursorPos(slime.x, slime.y);
+		printf("%s", slime.action1);
 
-		player.health -= monster.attack;
+		player.health -= slime.attack;
 
 		if (player.health < 0)
 		{
 			player.health = 0;
+			
 		}
-		monster.health -= player.attack;
-		if (monster.health < 0)
+		slime.health -= player.attack;
+		if (slime.health < 0)
 		{
-			monster.health = 0;
+			slime.health = 0;
+			
 		}
 	}
 	else
 	{
 		setCursorPos(player.x, player.y);
-		printf("%s", player.acthion2);
+		printf("%s", player.action2);
 
-		setCursorPos(monster.x, monster.y);
-		printf("%s", monster.acthion2);
+		setCursorPos(slime.x, slime.y);
+		printf("%s", slime.action2);
 	}
 	ShowAttack++;
 	Sleep(500);
+
 }
-#endif // 0
+

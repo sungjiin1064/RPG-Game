@@ -1,0 +1,4 @@
+
+void respawn();
+
+void KingRespawn();
