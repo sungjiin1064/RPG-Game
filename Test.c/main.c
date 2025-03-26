@@ -1,10 +1,6 @@
 
 #include "Battle.h"
-
-
-// 헤더파일에 옮기니깐 에러가 떠서 메인에 다있습니다. 
-// ShowBattle를 헤더로 옮기고 내용을 소스파일에 옮기면 player와 monster가 Battle.obj에 이미 정의되어 있습니다.라고 뜨네요
-//                                                
+                                              
 
 void setCursorPos(int x, int y)
 {
@@ -59,10 +55,10 @@ void ShowBattle()
 
 		player.health -= monster.attack;
 
-		if (player.health < 0)
-		{
-			player.health = 0;
-		}
+		if (player.health < 0)              //  왜 여기에다 입력해야 action2가 보여질때 피가 달죠? 
+		{                                   // action2 동작때 피가다는거니깐 밑에 쓰는거 아닌가요?
+			player.health = 0;              // 여기에 쓰는게 맞나요?
+		}                                   
 		monster.health -= player.attack;
 		if (monster.health < 0)
 		{
@@ -71,7 +67,7 @@ void ShowBattle()
 	}
 	else
 	{
-		setCursorPos(player.x, player.y);    // 공격모션일때 피가달게
+		setCursorPos(player.x, player.y);   
 		printf("%s", player.acthion2);
 
 		setCursorPos(monster.x, monster.y);
@@ -109,16 +105,17 @@ int main()
 
 			if (monster.health <= 0)
 			{
-				startPosition();  // 피가 0 되고난후에 리젠되게할려고 했는데 막타모션이 없이 0이됩니다.
+				
+				//startPosition();  // 피가 0 되고난후에 리젠되게할려고 했는데 막타모션이 없이 0이됩니다.
+				//Sleep(1000);
 
-				Sleep(1000);
 				respawn(); //리스폰된 몬스터가 다가와서 전투를 시작하면 모션1부터 안되고 모션2부터 시작됩니다.
 			}
 
 			if (player.health <= 0)
 			{
-				startPosition(); // 피가 0이된후 사망. 역시 모션없이 0이됩니다
-				Sleep(1000);
+				//startPosition(); // 피가 0이된후 사망. 역시 모션없이 0이됩니다
+				//Sleep(1000);
 				break;
 			}
 
