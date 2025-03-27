@@ -3,18 +3,18 @@
 #include "Character.h"   
 
 int slimeCount = 0;
-//int kingSlimeSpawn = 0;
+int kingSlimeSpawn = 0;
 void checkSlimeCount()
 {
 	if (slime.health <= 0)
 	{
 		slimeCount++;
-		setCursorPos(player.x + 7, player.y - 3);
+		setCursorPos(player.x + 7, player.y - 7);
 		printf("%d / 3", slimeCount);
 		if (slimeCount >= 3)
 		{
 			KingRespawn();
-			//kingSlimeSpawn = 1;
+			kingSlimeSpawn = 1;
 		}
 		respawn();
 	}

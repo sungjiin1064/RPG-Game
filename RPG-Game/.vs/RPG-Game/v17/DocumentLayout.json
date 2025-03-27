@@ -3,29 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Respawn.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Respawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E0FF300-A2B6-4E14-890A-3D741328486C}|RPG-Game.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\battle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2E0FF300-A2B6-4E14-890A-3D741328486C}|RPG-Game.vcxproj|solutionrelative:battle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A241C63E-E866-4DD9-8D77-2DB24CBACBCA}|..\\Test.c\\Test.c.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,7 +31,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,46 +39,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Character.c",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.c",
               "RelativeDocumentMoniker": "..\\Test.c\\Character.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.c",
               "RelativeToolTip": "..\\Test.c\\Character.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-26T10:50:45.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Character.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.h",
               "RelativeDocumentMoniker": "..\\Test.c\\Character.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.h",
               "RelativeToolTip": "..\\Test.c\\Character.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-26T10:50:14.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Respawn.c",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Respawn.c",
               "RelativeDocumentMoniker": "..\\Test.c\\Respawn.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Respawn.c",
               "RelativeToolTip": "..\\Test.c\\Respawn.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-25T15:34:03.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Respawn.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Respawn.h",
               "RelativeDocumentMoniker": "..\\Test.c\\Respawn.h",
@@ -95,20 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "battle.c",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\battle.c",
-              "RelativeDocumentMoniker": "battle.c",
-              "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\battle.c",
-              "RelativeToolTip": "battle.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T14:57:06.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Battle.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.h",
               "RelativeDocumentMoniker": "..\\Test.c\\Battle.h",
@@ -121,26 +104,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Battle.c",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.c",
               "RelativeDocumentMoniker": "..\\Test.c\\Battle.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Battle.c",
               "RelativeToolTip": "..\\Test.c\\Battle.c",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-25T14:39:14.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\main.c",
               "RelativeDocumentMoniker": "..\\Test.c\\main.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\main.c",
               "RelativeToolTip": "..\\Test.c\\main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-25T14:39:01.461Z",
               "EditorCaption": ""
