@@ -20,6 +20,12 @@ void checkSlimeCount()
 	}
 }
 
+void KingSlimeMove()
+{
+	Slime.x--;
+	Sleep(10);
+}
+
 int main()
 {
 	while (true)
