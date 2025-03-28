@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "..\\Test.c\\Character.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\Test.c\\Character.h",
               "RelativeToolTip": "..\\Test.c\\Character.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-26T10:50:14.858Z",
               "EditorCaption": ""
@@ -73,8 +73,7 @@
               "RelativeToolTip": "..\\Test.c\\Respawn.c",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T15:34:03.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T15:34:03.595Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "..\\Test.c\\Respawn.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T15:33:50.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T15:33:50.202Z"
             },
             {
               "$type": "Document",
@@ -99,8 +97,7 @@
               "RelativeToolTip": "..\\Test.c\\Battle.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T14:39:19.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T14:39:19.458Z"
             },
             {
               "$type": "Document",
@@ -112,8 +109,7 @@
               "RelativeToolTip": "..\\Test.c\\Battle.c",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T14:39:14.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T14:39:14.233Z"
             },
             {
               "$type": "Document",
@@ -125,8 +121,7 @@
               "RelativeToolTip": "..\\Test.c\\main.c",
               "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T14:39:01.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T14:39:01.461Z"
             }
           ]
         }
