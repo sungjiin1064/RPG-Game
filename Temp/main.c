@@ -1,7 +1,8 @@
 
-#include <stdio.h>
+#include <stdio.h>   
 #include <stdbool.h>
 #include <Windows.h>
+
 
 typedef struct
 {
@@ -12,7 +13,7 @@ typedef struct
 	char action3[20];
 }Character;
 
-void setCursorPos(int x, int y)
+void GoToXY(int x, int y)
 {
 	COORD pos = { x, y };
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
@@ -20,13 +21,13 @@ void setCursorPos(int x, int y)
 
 void StartPosition(Character* player, Character* slime)
 {
-	setCursorPos(player->x - 1, player->y - 2);
+	GoToXY(player->x - 1, player->y - 2);
 	printf("%s : %d", player->name, player->health);
-	setCursorPos(player->x, player->y);
+	GoToXY(player->x, player->y);
 	printf("%s", player->action1);
-	setCursorPos(slime->x, slime->y - 2);
+	GoToXY(slime->x, slime->y - 2);
 	printf("%s : %d", slime->name, slime->health);
-	setCursorPos(slime->x, slime->y);
+	GoToXY(slime->x, slime->y);
 	printf("%s", slime->action1);
 }
 
@@ -38,19 +39,19 @@ void slimeMoving(Character* slime)
 
 void BattleWithslime(Character* player, Character* slime)
 {
-	setCursorPos(player->x + 7, player->y - 5);
+	GoToXY(player->x + 7, player->y - 5);
 	printf("전투중...");
-	setCursorPos(player->x + 11, player->y);
+	GoToXY(player->x + 11, player->y);
 	printf("vs");
 
 	static int ShowAttack = true;
 
 	if (ShowAttack % 2 != false)
 	{
-		setCursorPos(player->x, player->y);
+		GoToXY(player->x, player->y);
 		printf("%s", player->action1);
 
-		setCursorPos(slime->x, slime->y);
+		GoToXY(slime->x, slime->y);
 		printf("%s", slime->action1);
 
 		player->health -= slime->attack;
@@ -66,10 +67,10 @@ void BattleWithslime(Character* player, Character* slime)
 	}
 	else
 	{
-		setCursorPos(player->x, player->y);
+		GoToXY(player->x, player->y);
 		printf("%s", player->action2);
 
-		setCursorPos(slime->x, slime->y);
+		GoToXY(slime->x, slime->y);
 		printf("%s", slime->action2);			
 	}
 	ShowAttack++;
@@ -107,16 +108,16 @@ int main()
 				StartPosition(&player, &slime);     // 막타가 액션 2동작때 피가 0보이게할려고
 				BattleWithslime(&player, &slime);   // 막타모션이 없고 리젠몬스터가 다가왔을때 모션2 부터 시작
 
-				setCursorPos(player.x, player.y);  // 무기 잔상 없애기
+				GoToXY(player.x, player.y);  // 무기 잔상 없애기
 				printf("          ");
-				setCursorPos(player.x, player.y-2);  // 몬스터가 한방컷 나면 100에서 뒤에 0 잔상이남음
+				GoToXY(player.x, player.y-2);  // 몬스터가 한방컷 나면 100에서 뒤에 0 잔상이남음
 				printf("         ");
-				setCursorPos(slime.x, slime.y -2);  // 몬스터가 한방컷 나면 체력이 00이 보여서 뒤에0이 잔상인거 같음
+				GoToXY(slime.x, slime.y -2);  // 몬스터가 한방컷 나면 체력이 00이 보여서 뒤에0이 잔상인거 같음
 				printf("           ");
 
 				StartPosition(&player, &slime);     // 잔상없앤거 보여주기위해서	
 
-				setCursorPos(slime.x, slime.y);
+				GoToXY(slime.x, slime.y);
 				printf("%s", slime.action3);				
 				
 				Sleep(1000);

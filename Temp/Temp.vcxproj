@@ -130,9 +130,11 @@
   <ItemGroup>
     <ClCompile Include="Character.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="Stage.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
+    <ClInclude Include="Stage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

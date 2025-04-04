@@ -1,0 +1,3 @@
+
+#define STAGE_WIDTH 20
+#define STAGE_HEIGHT 10
