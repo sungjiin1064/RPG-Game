@@ -32,6 +32,7 @@ int main()
 
 		if (slime.x > player.x + 14)
 		{
+			//SlimeMove(SlimeWALK, )
 			slime.x--;
 			Sleep(10);
 		}

@@ -1,9 +1,5 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(RPG_Test.vcxproj, Test.c.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  Battle.c
-  Character.c
-  Respawn.c
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(RPG_Test.vcxproj, Test.c.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
   main.c
-C:\Users\user\Desktop\RPG-Game\Test.c\main.c(59,6): warning C4013: 'respawn'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\user\Desktop\RPG-Game\Test.c\main.c(63,6): warning C4013: 'KingRespawn'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  코드를 생성하고 있습니다...
-  Test.c.vcxproj -> C:\Users\user\Desktop\RPG-Game\RPG-Game\x64\Debug\RPG_change.exe
+C:\Users\Administrator\Desktop\RPG-Game\Test.c\main.c(60,6): warning C4013: 'respawn'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\RPG-Game\Test.c\main.c(64,6): warning C4013: 'KingRespawn'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Test.c.vcxproj -> C:\Users\Administrator\Desktop\RPG-Game\RPG-Game\x64\Debug\RPG_change.exe
