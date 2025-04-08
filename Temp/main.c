@@ -7,10 +7,19 @@ typedef struct
 {
 	int x, y, attack, health;
 	char name[20];
-	char action1[20];
-	char action2[20];
-	char action3[20];
+	char action1[SLIME_WIDTH + 1];
+	char action2[SLIME_WIDTH + 1];
+	char action3[SLIME_WIDTH + 1];
 }Character;
+
+typedef struct
+{
+	int x, y, attack, health;
+	char name[20];
+	char action1[SLIME_HEIGHT][SLIME_WIDTH + 1]; // 기본 상태 (3줄)
+	char action2[SLIME_HEIGHT][SLIME_WIDTH + 1]; // 공격 상태 (3줄)
+	char action3[SLIME_HEIGHT][SLIME_WIDTH + 1]; // 사망 상태 (3줄)
+}KingCharacter;
 
 void StartPosition(Character* player, Character* slime)
 {
@@ -35,6 +44,20 @@ void slimeMoving(Character* slime)
 	GoToXY(slime->x - 2, slime->y - 10);
 	printf("★      ★    ☆  ");
 	slime->x--;
+	Sleep(50);
+}
+
+void KingslimeMoving(KingCharacter* kingSlime)
+{
+	GoToXY(kingSlime->x - 30, kingSlime->y);
+	printf("..o");
+	GoToXY(kingSlime->x - 2, kingSlime->y - 8);
+	printf("☆");
+	GoToXY(kingSlime->x - 10, kingSlime->y - 9);
+	printf("★☆    ★     ★    ★ ☆");
+	GoToXY(kingSlime->x - 2, kingSlime->y - 10);
+	printf("★      ★    ☆  ");
+	kingSlime->x--;
 	Sleep(50);
 }
 
@@ -84,8 +107,8 @@ void BattleWithslime(Character* player, Character* slime)
 	Sleep(500);
 }
 
-void BattleWithKingSlime(Character* player, Character* slime, char (*Slime)[SLIME_WIDTH + 1])
-{	
+void BattleWithKingSlime(Character* player, KingCharacter* kingSlime, char (*Slime)[SLIME_WIDTH + 1])
+{
 
 	static int ShowAttack = true;
 
@@ -94,18 +117,18 @@ void BattleWithKingSlime(Character* player, Character* slime, char (*Slime)[SLIM
 		GoToXY(player->x, player->y);
 		printf("%s", player->action1);
 
-		
-		SlimeMove(SlimeWALK, slime->x, slime->y - 2);
 
-		player->health -= slime->attack;
+		KingSlime(SlimeWALK, kingSlime->x, kingSlime->y);
+
+		player->health -= kingSlime->attack;
 		if (player->health < 0)
 		{
 			player->health = 0;
 		}
-		slime->health -= player->attack;
-		if (slime->health < 0)
+		kingSlime->health -= player->attack;
+		if (kingSlime->health < 0)
 		{
-			slime->health = 0;
+			kingSlime->health = 0;
 		}
 	}
 	else
@@ -113,7 +136,7 @@ void BattleWithKingSlime(Character* player, Character* slime, char (*Slime)[SLIM
 		GoToXY(player->x, player->y);
 		printf("%s", player->action2);
 
-		SlimeMove(SlimeFIGHT, slime->x, slime->y - 2);
+		KingSlime(SlimeFIGHT, kingSlime->x, kingSlime->y);
 	}
 	ShowAttack++;
 	Sleep(500);
@@ -139,9 +162,18 @@ void SlimeRespawn(Character* slime)
 	slime->x = 52;
 }
 
+void KingSlimeRespawn(KingCharacter* kingSlime)
+{
+	GoToXY(kingSlime->x, kingSlime->y);
+	printf("%s", kingSlime->action1);
+	kingSlime->health;
+	
+}
+
 //                   x   y 공  피  이름    액션1(기본)  액션2(공격)  액션3(사망)
 Character player = { 25,10,11,100,"유저",  "(  '' )/","(  '' )ㅡE","__+__" };
 Character slime = { 52,10, 4, 20,"슬라임"," ( ''  )","( ''   )"," ( x x )" };
+KingCharacter kingSlime = { 52,10, 11, 200,"킹슬라임"," - -"," - ..  -","_ _ _ _ _ _", " - -","- ..  -","_ _ _ _ _ _", " - - - - -","'_ _x x_ _'" };
 
 int main()
 {
@@ -161,9 +193,10 @@ int main()
 
 		if (slime.x > player.x + 14)
 		{
-			SlimeMove(SlimeWALK, 52, 8);
-			slime--;
-			//slimeMoving(&slime);
+			/*SlimeMove(SlimeWALK, slime.x, 8);
+			slime.x--;
+			Sleep(50);*/
+			slimeMoving(&slime);
 
 		}
 		else
@@ -193,7 +226,7 @@ int main()
 
 				if (player.health > 0 && slimeCount < 1)
 				{
-				
+
 					SlimeRespawn(&slime);
 				}
 				else if (slimeCount == 1 && kingSlimeSpawn == 0)
@@ -203,48 +236,60 @@ int main()
 					GoToXY(slime.x, slime.y);
 					printf("         ");
 
-					SlimeRespawn(&slime);
 					
+
 					kingSlimeSpawn = 1;
-					SlimeMove(SlimeWALK, slime.x, slime.y -2);	// 보스몹 소환
-					
-					if (slime.x > player.x + 1)
+					KingSlimeRespawn(&kingSlime);
+					KingSlime(SlimeWALK, slime.x, 8);	// 보스몹 소환
+					//slime.x--;
+					Sleep(100);
+
+					if (slime.x > player.x + 11)
 					{
-						SlimeMove(SlimeWALK, slime.x, slime.y - 2);
-						slime.x--;
-						Sleep(50);
+						
+						KingslimeMoving(&kingSlime);
+						
+						Sleep(1000);
+						//GoToXY(slime.x, slime.y - 3);  // 기존슬라임 잔상제거
+						//printf("              ");
+						//GoToXY(slime.x, slime.y - 2);  // 기존슬라임 잔상제거
+						//printf("                         ");
+						//GoToXY(slime.x, slime.y);
+						//printf("               ");
+
+						//KingSlime(SlimeWALK, slime.x - 1, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 2, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 3, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 4, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 5, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 6, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 7, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 8, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 9, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 10, 8);
+						//Sleep(50);
+						//KingSlime(SlimeWALK, slime.x - 11, 8);
+						//Sleep(50);
+					
+
 					}
 					else
 					{
 						BattleWithKingSlime(&player, &slime, SlimeWALK);
 					}
 
-					//SlimeMove(SlimeWALK, slime.x-1, slime.y -2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x-2, slime.y -2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x-3, slime.y -2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 4, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 5, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 6, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 7, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 8, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 9, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 10, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 11, slime.y - 2);
-					//Sleep(50);
-					//SlimeMove(SlimeWALK, slime.x - 12, slime.y - 2);
-					//Sleep(50);
 
-					
+
+
 
 					Sleep(1000);
 				}
@@ -256,17 +301,17 @@ int main()
 
 			if (player.health <= 0)
 			{
-				StartPosition(&player, &slime);    
-				BattleWithslime(&player, &slime);  
+				StartPosition(&player, &slime);
+				BattleWithslime(&player, &slime);
 				StartPosition(&player, &slime);
 
-				GoToXY(player.x, player.y);  
+				GoToXY(player.x, player.y);
 				printf("          ");
-				GoToXY(player.x, player.y - 2); 
+				GoToXY(player.x, player.y - 2);
 				printf("         ");
-				GoToXY(slime.x, slime.y - 2);  
+				GoToXY(slime.x, slime.y - 2);
 				printf("             ");
-				
+
 				GoToXY(player.x, player.y);
 				printf("%s", player.action3);
 
