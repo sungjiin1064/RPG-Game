@@ -64,7 +64,7 @@ void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 	}
 	ShowAttack++;
 
-	Sleep(300);
+	Sleep(400);
 }
 
 void BattleWithBoss(Character* player, BossCharacter* boss)
@@ -117,7 +117,7 @@ void BattleWithBoss(Character* player, BossCharacter* boss)
 		}
 	}
 	ShowAttack++;
-	Sleep(300);
+	Sleep(400);
 }
 
 

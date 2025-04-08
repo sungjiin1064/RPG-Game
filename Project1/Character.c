@@ -62,11 +62,11 @@ void SlimeRespawn(Character* slime)
 	slime->health = 100;	
 }
 //                   x   y   공   피
-Character player = { 25, 10, 31, 500, "유저",  "(  '' )/", "(  '' )ㅡE", "__+__","\\(  ''  )/" };
+Character player = { 25, 10, 31, 500, "기 사",  "(  '' )/", "(  '' )ㅡE", "__+__","\\(  ''  )/" };
 Character slime = {  52, 10, 11, 100, "슬라임"," ( ''  )","( ''   )"," ( x x )", " ( 'v' )"};
 BossCharacter boss =
 {// x   y  공   피
-	52, 8, 22, 200, "킹 슬라임",
+	52, 8, 22, 300, "킹 슬라임",
 	{
 		"   - -",
 		" - ..  -",

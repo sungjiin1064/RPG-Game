@@ -6,7 +6,7 @@
 
 int main()
 {
-	//GameStart();
+	GameStart();
 	srand(time(NULL));
 	
 	
@@ -37,7 +37,7 @@ int main()
 				SlimeGoldDrop(&slime, &inventory);
 
 				//Sleep(1000);
-				if (slimeCount < 1) 
+				if (slimeCount < 5) 
 				{
 					GoToXY(2, 4);
 					printf("보스 몬스터 소환 %d / 5", slimeCount);
@@ -81,7 +81,7 @@ int main()
 				GoToXY(boss.x, boss.y );
 				printf("    ζ         ");
 				PlayerAction(&player, 4);
-				GoToXY(player.x, player.y - 2);
+				GoToXY(player.x-2, player.y - 2);
 				printf("  승  리  ");
 				GoToXY(0,14);
 							

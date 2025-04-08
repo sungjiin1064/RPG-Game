@@ -38,23 +38,23 @@ void GameStart()
 
 		ShowStage(Stage, 0, 0);
 
-		GoToXY(4, Lmouse);
+		GoToXY(8, Lmouse);
 		printf("(  '' )ㅡE");
-		GoToXY(29, Rmouse);
+		GoToXY(34, Rmouse);
 		printf(" ( ''  )");
 
-		GoToXY(16, 3);
-		printf("┌──────────┐");
-		GoToXY(16, 4);
-		printf("| 게임시작 |");
-		GoToXY(16, 5);
-		printf("└──────────┘");
-		GoToXY(16, 6);
-		printf("┌──────────┐");
-		GoToXY(16, 7);
-		printf("| 게임종료 |");
-		GoToXY(16, 8);
-		printf("└──────────┘");
+		GoToXY(20, 3);
+		printf("┌───────────┐");
+		GoToXY(20, 4);
+		printf("│  게임시작 │ ");
+		GoToXY(20, 5);
+		printf("└───────────┘");
+		GoToXY(20, 6);
+		printf("┌───────────┐");
+		GoToXY(20, 7);
+		printf("│  게임종료 │ ");
+		GoToXY(20, 8);
+		printf("└───────────┘");
 
 		Sleep(100);
 
