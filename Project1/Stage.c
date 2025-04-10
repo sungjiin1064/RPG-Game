@@ -8,7 +8,6 @@ void ShowStage(char(*Stage)[STAGE_WIDTH + 1], int x, int y)
 		GoToXY(x, y + i);
 		printf("%s\n", Stage[i]);
 	}
-
 }
 
 char Stage[STAGE_HEIGHT][STAGE_WIDTH + 1] =  // ""사용할려면  +1
@@ -29,8 +28,8 @@ char Stage[STAGE_HEIGHT][STAGE_WIDTH + 1] =  // ""사용할려면  +1
 
 void GameStart()
 {
-	int Lmouse = 4;
-	int Rmouse = 4;
+	int L = 4;
+	int R = 4;
 
 	while (1)
 	{
@@ -38,9 +37,9 @@ void GameStart()
 
 		ShowStage(Stage, 0, 0);
 
-		GoToXY(8, Lmouse);
+		GoToXY(8, L);
 		printf("(  '' )ㅡE");
-		GoToXY(34, Rmouse);
+		GoToXY(34, R);
 		printf(" ( ''  )");
 
 		GoToXY(20, 3);
@@ -62,30 +61,30 @@ void GameStart()
 		{
 			if (GetAsyncKeyState(VK_UP) & 0x8000)
 			{
-				Lmouse -= 3;
-				Rmouse -= 3;
-				if (Lmouse < 4 || Rmouse < 4)
+				L -= 3;
+				R -= 3;
+				if (L < 4 || R < 4)
 				{
-					Lmouse = 4;
-					Rmouse = 4;
+					L = 4;
+					R = 4;
 				}
 				Sleep(50);
 			}
 
 			if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 			{
-				Lmouse += 3;
-				Rmouse += 3;
-				if (Lmouse > 7 || Rmouse > 7)
+				L += 3;
+				R += 3;
+				if (L > 7 || R> 7)
 				{
-					Lmouse = 7;
-					Rmouse = 7;
+					L = 7;
+					R = 7;
 				}
 				Sleep(50);
 			}
 			if (GetAsyncKeyState(VK_RETURN) & 0x8000)
 			{
-				if (Lmouse == 4)
+				if (L == 4)
 				{
 					GoToXY(12, 13);
 					printf("- 잠시후 게임을 시작합니다. -");
@@ -102,7 +101,7 @@ void GameStart()
 
 					return;
 				}
-				else if (Lmouse == 7)
+				else if (L == 7)
 				{
 					GoToXY(15, 13);
 					printf("< 게임을 종료하였습니다. >");

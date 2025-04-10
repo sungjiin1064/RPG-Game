@@ -4,8 +4,6 @@
 
 void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 {
-	system("cls");
-
 	ShowStage(Stage, 0, 0);
 	ShowGold(&inventory);
 
@@ -28,7 +26,7 @@ void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 		PlayerAction(player, 2);
 		if (player->health <= 0)
 		{
-			system("cls");
+			system("cls");                // 막타
 
 			ShowStage(Stage, 0, 0);
 			ShowGold(&inventory);
@@ -43,7 +41,7 @@ void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 		}
 		if (slime->health <= 0)
 		{
-			system("cls");
+			system("cls");                 // 않지우면 막타모션이 안보임
 
 			ShowStage(Stage, 0, 0);
 			ShowGold(&inventory);
@@ -59,18 +57,16 @@ void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 			PlayerAction(player, 1);
 			SlimeAction(slime, 3);
 
-			Sleep(1000);
+			Sleep(1000);					
 		}
 	}
 	ShowAttack++;
 
-	Sleep(400);
+	Sleep(500);
 }
 
 void BattleWithBoss(Character* player, BossCharacter* boss)
 {
-	system("cls");
-
 	ShowStage(Stage, 0, 0);
 	ShowGold(&inventory);
 
@@ -91,7 +87,7 @@ void BattleWithBoss(Character* player, BossCharacter* boss)
 
 		if (player->health <= 0)
 		{
-			system("cls");
+			system("cls");                  // 막타
 
 			ShowStage(Stage, 0, 0);
 			ShowGold(&inventory);
@@ -104,20 +100,23 @@ void BattleWithBoss(Character* player, BossCharacter* boss)
 		}
 		if (boss->health <= 0)
 		{
-			system("cls");
-
-			ShowStage(Stage, 0, 0);
-			BossGoldDrop(&boss, &inventory);
+			system("cls");                    // 막타
 
 			boss->health = 0;
+
+			ShowStage(Stage, 0, 0);
+			ShowGold(&inventory);
+			BossGoldDrop(&boss, &inventory);
 			PlayerAction(player, 1);
 			BossAction(boss, 3);
 			
 			Sleep(1000);
+
+			
 		}
 	}
 	ShowAttack++;
-	Sleep(400);
+	Sleep(500);
 }
 
 

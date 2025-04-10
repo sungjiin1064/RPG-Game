@@ -54,3 +54,10 @@ void SlimeGoldDrop(Character* slime, Inventory* inventory);
 void BossGoldDrop(Character* boss, Inventory* inventory);
 
 void ShowGold(Inventory* inventory);
+
+void PlayerDead(Character* player, Character* slime);
+
+void BossDead(BossCharacter* boss, Character* player);
+
+void BossLoading();
+

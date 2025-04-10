@@ -4,11 +4,12 @@
 #include "Character.h"
 #include "Stage.h"
 
+
+
 int main()
 {
-	GameStart();
-	srand(time(NULL));
-	
+	//GameStart();
+	srand(time(NULL));	
 	
 	int slimeCount = 0;
 	int bossSpawn = 0;
@@ -18,8 +19,7 @@ int main()
 		system("cls");
 
 		ShowStage(Stage,0,0);
-		ShowGold(&inventory);
-		
+		ShowGold(&inventory);		
 
 		if (bossSpawn == 0)
 		{			
@@ -29,79 +29,49 @@ int main()
 			//SlimeGoldDrop(&slime, &inventory);
 									
 			if (slime.health <= 0) 
-			{		
-				
+			{						
 				slimeCount++;
-				GoToXY(2, 4);
-				printf("보스 몬스터 소환 %d / 5", slimeCount);
-				SlimeGoldDrop(&slime, &inventory);
 
-				//Sleep(1000);
-				if (slimeCount < 5) 
-				{
-					GoToXY(2, 4);
-					printf("보스 몬스터 소환 %d / 5", slimeCount);
-					SlimeRespawn(&slime);
-					
+				//BossCount(slimeCount);
+				SlimeGoldDrop(&slime, &inventory);
+				
+				if (slimeCount < 2) 
+				{					
+					SlimeRespawn(&slime);					
 				}
 				else 
 				{
-					GoToXY(2, 4);
-					printf("보스 몬스터 소환..      3");
-					Sleep(1000);
-					GoToXY(2, 4);
-					printf("보스 몬스터 소환....    2");
-					Sleep(1000);
-					GoToXY(2, 4);
-					printf("보스 몬스터 소환......  1");
-					Sleep(1000);
+					BossLoading();
+
 					bossSpawn = 1; 			
 				}
 			}
 		}
 		else 
 		{			
-			MoveBoss(&boss, &player);
-			
+			MoveBoss(&boss, &player);			
 			BattleWithBoss(&player, &boss);
 
 			if (boss.health <= 0) 
 			{
-				system("cls");
-
-				ShowStage(Stage, 0, 0);
-
-				GoToXY(2, 2);
-				printf("보스 몬스터를 처치하였습니다!\n");
-				BossAction(&boss, 3);
-				GoToXY(boss.x, boss.y - 2);
-				printf("              ");
-				GoToXY(boss.x, boss.y - 1);
-				printf("   ⊂ ⊃     ");
-				GoToXY(boss.x, boss.y );
-				printf("    ζ         ");
-				PlayerAction(&player, 4);
-				GoToXY(player.x-2, player.y - 2);
-				printf("  승  리  ");
-				GoToXY(0,14);
-							
+				BossDead(&boss, &player);							
 				break;
 			}
 		}
-
 		if (player.health <= 0) 
 		{
-			GoToXY(player.x, player.y - 2);
-			printf("  사  망  ");
-			PlayerAction(&player, 3);
-			GoToXY(2, 2);
-			printf("케릭터가 사망하였습니다!\n");
-			GoToXY(0, 14);
-			
-
+			PlayerDead(&player,&slime);
 			break;
 		}
 	}
-
 	return 0;
 }
+
+#include <Windows.h>
+#include <stdio.h>   
+#include <stdbool.h>
+#include <conio.h>   // _kbhit
+#include <stdlib.h> // exit
+#include <time.h>
+
+

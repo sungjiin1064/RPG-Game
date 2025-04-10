@@ -57,16 +57,16 @@ void BossAction(BossCharacter* boss, int action)
 
 void SlimeRespawn(Character* slime)
 {
-	SlimeGoldDrop(&slime, &inventory);
+	SlimeGoldDrop(slime, &inventory);
 	slime->x = 52;
 	slime->health = 100;	
 }
 //                   x   y   공   피
-Character player = { 25, 10, 31, 500, "기 사",  "(  '' )/", "(  '' )ㅡE", "__+__","\\(  ''  )/" };
+Character player = { 25, 10, 31, 1150, "기 사",  "(  '' )/", "(  '' )ㅡE", "__+__","\\(  ''  )/" };
 Character slime = {  52, 10, 11, 100, "슬라임"," ( ''  )","( ''   )"," ( x x )", " ( 'v' )"};
 BossCharacter boss =
 {// x   y  공   피
-	52, 8, 22, 300, "킹 슬라임",
+	52, 8, 22, 100, "킹 슬라임",
 	{
 		"   - -",
 		" - ..  -",
@@ -121,4 +121,56 @@ void ShowGold(Inventory* inventory)
 	GoToXY(inventory->x, inventory->y);
 	printf("소지금화 : %d gold", inventory->gold);
 }
+
+void PlayerDead(Character* player, Character* slime)
+{	
+	ShowStage(Stage, 0, 0);
+		
+	SlimeAction(slime, 4);
+	PlayerAction(player, 3);
+
+	GoToXY(player->x-2, player->y - 2);
+	printf(" L O S E  ");
+	GoToXY(slime->x+1, slime->y - 2);
+	printf(" W I N          ");
+	GoToXY(2, 2);
+	printf("케릭터가 사망하였습니다!\n");
+
+	GoToXY(0, 14);
+}
+
+void BossDead(BossCharacter* boss, Character* player)
+{
+	BossAction(boss, 3); 
+	PlayerAction(player, 4);         
+	
+	GoToXY(boss->x-2, boss->y - 2);
+	printf("    L O S E       ");
+	GoToXY(boss->x, boss->y - 1);
+	printf("   ⊂ ⊃     ");
+	GoToXY(boss->x, boss->y);
+	printf("    ζ               ");	
+	GoToXY(player->x - 2, player->y - 2);
+	printf("    W I N   ");
+
+	GoToXY(2, 2);
+	printf("보스 몬스터를 처치하였습니다!\n");
+
+	GoToXY(0, 14);
+}
+
+void BossLoading()
+{
+	GoToXY(2, 4);
+	printf("보스 몬스터 소환..      3");
+	Sleep(1000);
+	GoToXY(2, 4);
+	printf("보스 몬스터 소환....    2");
+	Sleep(1000);
+	GoToXY(2, 4);
+	printf("보스 몬스터 소환......  1");
+	Sleep(1000);
+}
+
+
 

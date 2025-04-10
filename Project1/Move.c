@@ -14,12 +14,13 @@ void MoveSlime(Character* slime, Character* player)
 		PlayerAction(player, 1);
 		SlimeAction(slime, 1); // 기본 상태 출력
 		slime->x--; // X 좌표 감소
-		Sleep(70);
+		Sleep(50);
 	}
 }
 
 void MoveBoss(BossCharacter* boss, Character* player)
 {
+
 	while (boss->x > player->x + 12)
 	{
 		system("cls");
@@ -33,6 +34,6 @@ void MoveBoss(BossCharacter* boss, Character* player)
 		PlayerAction(player, 1);
 		BossAction(boss, 1); // 기본 상태 출력
 		boss->x--; // X 좌표 감소
-		Sleep(100);
+		Sleep(50);
 	}
 }
