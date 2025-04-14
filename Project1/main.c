@@ -67,11 +67,17 @@ int main()
 	return 0;
 }
 
-#include <Windows.h>
-#include <stdio.h>   
-#include <stdbool.h>
-#include <conio.h>   // _kbhit
-#include <stdlib.h> // exit
-#include <time.h>
+//#include <Windows.h>
+//#include <stdio.h>   
+//#include <stdbool.h>
+//#include <conio.h>   // _kbhit
+//#include <stdlib.h> // exit
+//#include <time.h>
+
+//SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos)
+//if (_kbhit())
+//{
+//	if (GetAsyncKeyState(VK_UP) & 0x8000)
+
 
 

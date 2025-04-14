@@ -126,21 +126,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="battle.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="outline.c" />
-    <ClCompile Include="respawn.c" />
-    <ClCompile Include="unitAnimation.c" />
-    <ClCompile Include="win_loss.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="battle.h" />
-    <ClInclude Include="outline.h" />
-    <ClInclude Include="respawn.h" />
-    <ClInclude Include="unitAnimation.h" />
-    <ClInclude Include="win_loss.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

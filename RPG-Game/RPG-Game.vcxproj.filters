@@ -14,41 +14,4 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="outline.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="win_loss.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="battle.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="respawn.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="unitAnimation.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="outline.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="win_loss.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="battle.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="respawn.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="unitAnimation.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

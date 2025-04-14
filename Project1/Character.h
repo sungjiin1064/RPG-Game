@@ -1,13 +1,13 @@
 
-#define SLIME_WIDTH 12
-#define SLIME_HEIGHT 3
-
 #include <Windows.h>
 #include <stdio.h>   
 #include <stdbool.h>
 #include <conio.h>   // _kbhit
 #include <stdlib.h> // exit
 #include <time.h>
+
+#define SLIME_WIDTH 12
+#define SLIME_HEIGHT 3
 
 void GoToXY(int x, int y);
 
