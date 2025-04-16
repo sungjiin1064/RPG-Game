@@ -41,7 +41,7 @@ void BattleWithSlime(Character* player, Character* slime, int slimeCount)
 		}
 		if (slime->health <= 0)
 		{
-			system("cls");                 // 않지우면 막타모션이 안보임
+			system("cls");                 // 안지우면 막타모션이 안보임
 
 			ShowStage(Stage, 0, 0);
 			ShowGold(&inventory);
@@ -93,7 +93,7 @@ void BattleWithBoss(Character* player, BossCharacter* boss)
 			ShowGold(&inventory);
 
 			player->health = 0;
-			PlayerAction(player, 3);
+			player->action3;
 			BossAction(boss, 4);
 
 			Sleep(1000);
