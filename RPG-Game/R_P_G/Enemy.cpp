@@ -182,6 +182,33 @@ void Enemy::KingRespawn()
 	//Sleep(1000);
 }
 
+void Enemy::BossLoding()
+{
+	GoToXY(10, 2);
+	cout << "잠시후 보스가 등장합니다.....3" << endl;
+	Sleep(1000);
+	GoToXY(10, 2);
+	cout << "잠시후 보스가 등장합니다...  2" << endl;
+	Sleep(1000);
+	GoToXY(10, 2);
+	cout << "잠시후 보스가 등장합니다.    1" << endl;
+
+}
+
+void Enemy::GoldDrop()
+{
+	gold = rand() % 50 + 51;
+	totalGold += gold;
+}
+
+void Enemy::ShowGold()
+{
+	GoToXY(54, 2);
+	cout << "현재 소지금액 : " << totalGold;
+}
+
+
+
 	
 
 
