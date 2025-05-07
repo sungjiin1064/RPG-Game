@@ -135,7 +135,7 @@ void Enemy::Battle(Player& player)
 		}
 		else
 		{
-			ChangeImage(SlimeIdle);        
+			ChangeImage(SlimeIdle);  // Idle 바꾸고 -> Slime.Image SlimeIdle 데이터가 들어옴       
 			ShowImage();
 			player.ChangeImage(SwordIdle);
 			player.ShowImage();	

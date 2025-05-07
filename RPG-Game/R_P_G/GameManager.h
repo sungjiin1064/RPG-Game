@@ -9,6 +9,11 @@ Enemy Slime = { 35,10,6,50,"슬라임",SlimeIdle };
 Enemy KingSlime = { 35,10,60,500,"킹슬라임",KingSlimeIdle };
 
 
+void GameCharacterSelect()
+{
+
+}
+
 
 void GameStart()
 {
