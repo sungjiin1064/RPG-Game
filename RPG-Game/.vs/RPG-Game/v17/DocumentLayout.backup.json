@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,8 +31,24 @@
       "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Image.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Image.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA08800A-5C21-47B9-9F9B-2C263C3E419F}|R_P_G\\R_P_G.vcxproj|solutionrelative:R_P_G\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,56 +58,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\main.cpp",
               "RelativeDocumentMoniker": "R_P_G\\main.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\main.cpp",
               "RelativeToolTip": "R_P_G\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-05T04:48:11.846Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Character.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.h",
               "RelativeDocumentMoniker": "R_P_G\\Character.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.h",
               "RelativeToolTip": "R_P_G\\Character.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-05T05:00:23.485Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.h",
               "RelativeDocumentMoniker": "R_P_G\\Player.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.h",
               "RelativeToolTip": "R_P_G\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-05T07:48:58.874Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Enemy.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.h",
               "RelativeDocumentMoniker": "R_P_G\\Enemy.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.h",
               "RelativeToolTip": "R_P_G\\Enemy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-05T04:51:12.456Z",
               "IsPinned": true,
@@ -103,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.cpp",
               "RelativeDocumentMoniker": "R_P_G\\Enemy.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Enemy.cpp",
               "RelativeToolTip": "R_P_G\\Enemy.cpp",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAHUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-05T07:30:18.683Z",
               "IsPinned": true,
@@ -129,7 +144,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "Image.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.h",
+              "RelativeDocumentMoniker": "R_P_G\\Image.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.h",
+              "RelativeToolTip": "R_P_G\\Image.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T13:56:25.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\GameManager.h",
+              "RelativeDocumentMoniker": "R_P_G\\GameManager.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\GameManager.h",
+              "RelativeToolTip": "R_P_G\\GameManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T13:40:05.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Image.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.cpp",
+              "RelativeDocumentMoniker": "R_P_G\\Image.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Image.cpp",
+              "RelativeToolTip": "R_P_G\\Image.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-06T12:47:41.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Character.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Character.cpp",
               "RelativeDocumentMoniker": "R_P_G\\Character.cpp",
@@ -141,39 +193,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.cpp",
               "RelativeDocumentMoniker": "R_P_G\\Player.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Player.cpp",
               "RelativeToolTip": "R_P_G\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-05T05:59:17.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Common.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.cpp",
               "RelativeDocumentMoniker": "R_P_G\\Common.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.cpp",
               "RelativeToolTip": "R_P_G\\Common.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-05T04:55:49.94Z"
+              "WhenOpened": "2025-05-05T04:55:49.94Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Common.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.h",
               "RelativeDocumentMoniker": "R_P_G\\Common.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\RPG-Game\\RPG-Game\\R_P_G\\Common.h",
               "RelativeToolTip": "R_P_G\\Common.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-05T04:55:03.243Z"
+              "WhenOpened": "2025-05-05T04:55:03.243Z",
+              "EditorCaption": ""
             }
           ]
         }

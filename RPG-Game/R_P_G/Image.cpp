@@ -3,11 +3,11 @@
 
 char SwordIdle[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
-	{"         :    "},
-	{"         +    "},
-	{"       0/     "},
-	{"      /|      "},
-	{"      / \\    "}
+	{"        :     "},
+	{"        +     "},
+	{"      0/      "},
+	{"     /|       "},
+	{"     / \\     "}
 };
 char SwordrMove[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
@@ -30,9 +30,9 @@ char ArrowIdle[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
 	{"              "},
 	{"              "},
-	{"       0__|\\ "},
-	{"      /|  |/  "},
-	{"      / \\    "}
+	{"      0__|\\  "},
+	{"     /|  |/   "},
+	{"     / \\     "}
 };
 char ArrowMove[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
@@ -87,10 +87,10 @@ char KingSlimeIdle[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 char KingSlimeMove[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
 	{"              "},
-	{"    _ _       "},
-	{"  _     _     "},
-	{" _ ..     _   "},
-	{" _ _ _ _ _ _ _"}
+	{"     _ _      "},
+	{"   _     _    "},
+	{"  _ ..     _  "},
+	{"_ _ _ _ _ _ _ "}
 };
 char KingSlimeBattle[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 {
@@ -100,4 +100,6 @@ char KingSlimeBattle[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 	{" _ _       _  "},
 	{"    -- --_ _ _"}
 };
+
+
 

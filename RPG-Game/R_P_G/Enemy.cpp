@@ -21,8 +21,8 @@ void Enemy::ShowImage()
 void Enemy::Move(Player& player)
 {
 
-	if (X <= 26)
-	{				
+	if (X < 26)
+	{	
 		Sleep(500);
 		Battle(player);
 	}
@@ -32,10 +32,10 @@ void Enemy::Move(Player& player)
 		{
 			ChangeImage(KingSlimeMove);
 			ShowImage();
-			Sleep(100);
+			Sleep(200);
 			ChangeImage(KingSlimeIdle);
 			ShowImage();
-			Sleep(100);
+			Sleep(200);
 
 			X--;
 		}
@@ -46,7 +46,7 @@ void Enemy::Move(Player& player)
 			Sleep(100);
 			ChangeImage(SlimeIdle);
 			ShowImage();			
-			Sleep(100);
+			Sleep(300);
 
 			X--;
 		}
@@ -54,7 +54,7 @@ void Enemy::Move(Player& player)
 	}
 }
 
-void Enemy::Battle(Player& player) //
+void Enemy::Battle(Player& player) 
 {
 	static bool isBattleImage = true;
 	while (player.HP > 0 && HP > 0)
@@ -71,17 +71,32 @@ void Enemy::Battle(Player& player) //
 			{
 				HP = 0;
 				Count++;
+				GoldDrop();		
+				ShowGold();
 			}
-			ChangeImage(SlimeBattle);
+			if(isKingSlime)
+			{
+				ChangeImage(KingSlimeBattle);
+			}
+			else
+			{
+				ChangeImage(SlimeBattle);
+			}
 			ShowImage();
 			player.ChangeImage(SwordBattle);
-			player.ShowImage();
-
+			player.ShowImage();			
 
 		}
 		else
 		{
-			ChangeImage(SlimeIdle);
+			if (isKingSlime)
+			{				
+				ChangeImage(KingSlimeIdle);
+			}
+			else
+			{
+				ChangeImage(SlimeIdle);
+			}
 			ShowImage();
 			player.ChangeImage(SwordIdle);
 			player.ShowImage();
@@ -92,10 +107,25 @@ void Enemy::Battle(Player& player) //
 
 	if (HP == 0)
 	{
-		if (Count < 2)
+		if (isKingSlime)
 		{
-			GoToXY(10, 0);
-			cout << Count << " / 2" << endl;
+			GoToXY(10, 2);
+			cout << "보스를 처치하였습니다." << endl;
+			Sleep(1000);
+			GoToXY(10, 3);
+			cout << "게임을 종료합니다...  " << endl;
+			Sleep(1000);
+			
+			system("cls");
+			GoToXY(10, 2);
+			cout << "승 리" << endl;
+			
+			exit(0);
+		}
+		else if (Count < 2)
+		{
+			GoToXY(14, 2);
+			cout << "보스 소환까지 : " << Count << " / 2" << endl;
 			ChangeImage(SlimeIdle);
 			ShowImage();
 			player.ChangeImage(SwordIdle);
@@ -105,9 +135,12 @@ void Enemy::Battle(Player& player) //
 		}
 		else
 		{
-
-			X = 40;
-			HP = 100;
+			ChangeImage(SlimeIdle);        
+			ShowImage();
+			player.ChangeImage(SwordIdle);
+			player.ShowImage();	
+			
+			KingRespawn();
 			isKingSlime = true;
 			Sleep(1000);
 			system("cls");
@@ -120,26 +153,33 @@ void Enemy::Battle(Player& player) //
 
 	if (player.HP == 0)
 	{
+		system("cls");
+		GoToXY(10, 2);
+		cout << "Game Over" << endl;
+		Sleep(1000);
 		exit(0);
 	}
-
 	
 }
 
 void Enemy::Respawn()
 {
-	X = 40;
+	X = 36;
 	HP = 50;
-	Sleep(1000);
+	Sleep(1000);   
 	system("cls");
 }
 
 void Enemy::KingRespawn()
 {
-	X = 40;
-	HP = 100;
+	GoToXY(14, 2);
+	cout <<"보스 소환까지 : " << Count << " / 2" << endl;
 	Sleep(1000);
-	system("cls");
+
+	BossLoding();
+	X = 36;
+	HP = 100;
+	//Sleep(1000);
 }
 
 	

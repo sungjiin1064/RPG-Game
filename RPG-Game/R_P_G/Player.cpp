@@ -12,8 +12,8 @@ void Player::ShowImage()
 			
 		}
 	}
-	GoToXY(X+4, Y + UNIT_HEIGHT + 2);
+	GoToXY(X+3, Y + UNIT_HEIGHT + 2);
 	cout << "HP :       ";
-	GoToXY(X+4, Y + UNIT_HEIGHT + 2);
+	GoToXY(X+3, Y + UNIT_HEIGHT + 2);
 	cout << "HP : " << HP;
 }
