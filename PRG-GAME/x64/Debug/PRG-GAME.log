@@ -1,1 +1,21 @@
-﻿
+﻿  main.cpp
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\ImageModel.h(33,12): error C3646: 'SwordIdle': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\ImageModel.h(33,22): error C2059: 구문 오류: '='
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\ImageModel.h(39,3): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\Image.h(30,15): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\main.cpp(18,20): error C2039: 'SwordIdle': 'ImageModel'의 멤버가 아닙니다.
+      C:\Users\user\Desktop\RPG-Game\PRG-GAME\ImageModel.h(5,8):
+      'ImageModel' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\RPG-Game\PRG-GAME\main.cpp(18,13): error C2512: 'Image::Image': 사용할 수 있는 적절한 기본 생성자가 없습니다.
+      C:\Users\user\Desktop\RPG-Game\PRG-GAME\main.cpp(18,13):
+      인수 목록 '()'을(를) 일치시키는 동안
+  
