@@ -18,8 +18,6 @@
 
 class Player : public Character
 {
-private:
-	char image[UNIT_HEIGHT][UNIT_WIDTH + 1];
 
 public:
 	Player(int posX,int posY,int attack,int hp,string name, char image[UNIT_HEIGHT][UNIT_WIDTH + 1])

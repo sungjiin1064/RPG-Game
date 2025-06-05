@@ -1,5 +1,7 @@
 #include "Enemy.h"
 
+
+
 int Count = 0;
 
 void Enemy::ShowImage()
@@ -8,8 +10,10 @@ void Enemy::ShowImage()
 	{
 		for (int x = 0;x < UNIT_WIDTH + 1;x++)
 		{
-			GoToXY(X + x, Y + y);
-			cout << IMAGE[y][x];
+			
+		    GoToXY(X + x, Y + y);
+	     	cout << IMAGE[y][x];
+			
 		}
 	}
 	GoToXY(X+2, Y + UNIT_HEIGHT + 2);
@@ -109,7 +113,7 @@ void Enemy::Battle(Player& player)
 	{
 		if (isKingSlime)
 		{
-			GoToXY(10, 2);
+			/*GoToXY(10, 2);
 			cout << "보스를 처치하였습니다." << endl;
 			Sleep(1000);
 			GoToXY(10, 3);
@@ -120,7 +124,64 @@ void Enemy::Battle(Player& player)
 			GoToXY(10, 2);
 			cout << "승 리" << endl;
 			
-			exit(0);
+			exit(0);*/
+
+			system("cls");
+			
+			GoToXY(0, 15);
+			cout << "=================================================";
+			player.ChangeImage(SwordIdle);
+			player.ShowImage();
+
+			int input;
+			
+			GoToXY(5, 2);
+			cout << "보스를 처치하였습니다." << endl;
+			Sleep(2000);
+			GoToXY(5, 2);
+			cout << "다음 중 원하시는 플레이를 선택하여 주세요." << endl;
+			GoToXY(5, 3);
+			cout << "1_ 현제 스테이지를 계속한다." << endl;
+			GoToXY(5, 4);
+			cout << "2_ 다음 스테이지로 넘어간다." << endl;
+			GoToXY(5, 5);
+			cout << "3_ 상점으로 이동한다." << endl;
+			GoToXY(5, 6);
+			cout << "입력 : ";
+			scanf_s("%d", &input);
+			//system("cls");
+			switch (input)
+			{
+			case 1:
+				GoToXY(5, 7);
+				cout << "현제 스테이지를 계속합니다." << endl;
+				Sleep(1000);
+				//GameStart();
+			
+				break;
+			case 2:
+				GoToXY(5, 7);
+				cout << "다음 스테이지로 넘어갑니다." << endl;
+
+				break;
+			case 3:
+				GoToXY(5, 7);
+				cout << "상점으로 이동합니다." << endl;
+
+				break;
+				
+			default:
+				GoToXY(5, 2);
+				cout << "잘못 입력하였습니다. 1~3번 중에 하나를 선택하여 주세요." << endl;
+
+				break;
+
+
+			}
+			
+			
+			
+
 		}
 		else if (Count < 2)
 		{
@@ -209,23 +270,9 @@ void Enemy::ShowGold()
 
 
 
+
+
 	
 
 
-//void Enemy::Move(Player& player)
-//{
-//	while (X > 26)
-//	{
-//		ChangeImage(SlimeMove);
-//		ShowImage();	
-//		Sleep(100);
-//		ChangeImage(SlimeIdle);
-//		ShowImage();	
-//		Sleep(100);
-//
-//		X--;
-//	}
-//	Sleep(500);
-//	Battle(player);
-//}
 

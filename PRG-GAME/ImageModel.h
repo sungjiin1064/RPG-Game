@@ -1,9 +1,11 @@
 #pragma once
 
-
+//ascii art archive
 
 struct ImageModel
 {
+    bool isIdle;
+    const char* CurrentImage;
     const char* backGround = R"(
                                                .
                                              .' `.
@@ -30,7 +32,7 @@ struct ImageModel
 ============================================================
 )";
 
-    string SwordIdle = R"(
+    const char* SwordIdle = R"(
    :
    +
  0/
@@ -73,5 +75,30 @@ __0/
 
 ( ''    )
 )";
+
+    const char* KingSlimeIdle = R"(
+
+    _ _
+  _     _
+ _ ..     _
+_ _ _ _ _ _ _
+)";
+    const char* KingSlimeMove = R"(
+
+     _ _
+   _     _
+  _ ..     _
+_ _ _ _ _ _ _
+)";
+    const char* KingSlimeBattle = R"(
+   _ _
+ _     _
+_ ..     _
+ _ _       _
+    -- --_ _ _
+)";
+      
 };
+
+
 

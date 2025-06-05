@@ -1,10 +1,19 @@
-#define SLIME_WIDTH 11
-#define SLIME_HEIGHT 3
+#pragma once
 
-#include "Stage.h"
+#include "Image.h"
+#include "Common.h"
 
-char SlimeWALK[SLIME_HEIGHT][SLIME_WIDTH + 1];
-char SlimeFIGHT[SLIME_HEIGHT][SLIME_WIDTH + 1];
-char SlimeDEAD[SLIME_HEIGHT][SLIME_WIDTH + 1];
+class Character
+{
+public:
+    int X;
+    int Y;
+    int ATK;
+    int HP;
+    std::string NAME;
+    char IMAGE[UNIT_HEIGHT][UNIT_WIDTH + 1];
 
-void SlimeMove(char (*Slime)[SLIME_WIDTH + 1], int x, int y);
+    Character(int posX, int posY, int attack, int hp, std::string name, char image[UNIT_HEIGHT][UNIT_WIDTH + 1]);
+    void ChangeImage(char image[UNIT_HEIGHT][UNIT_WIDTH + 1]);
+};
+

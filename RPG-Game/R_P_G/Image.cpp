@@ -64,7 +64,7 @@ char SlimeMove[UNIT_HEIGHT][UNIT_WIDTH + 1] =
 	{"              "},
 	{"              "},
 	{"              "},
-	{"              "},
+    {"              "},
 	{"  ( ''  ) ..  "}  //¡£
 };
 char SlimeBattle[UNIT_HEIGHT][UNIT_WIDTH + 1] =

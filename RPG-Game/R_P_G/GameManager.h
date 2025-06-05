@@ -9,10 +9,10 @@ Enemy Slime = { 35,10,6,50,"슬라임",SlimeIdle };
 Enemy KingSlime = { 35,10,60,500,"킹슬라임",KingSlimeIdle };
 
 
-void GameCharacterSelect()
-{
-
-}
+//void GameCharacterSelect()
+//{
+//
+//}
 
 
 void GameStart()
@@ -23,8 +23,12 @@ void GameStart()
 	{
 		Slime.ShowGold();
 
-		GoToXY(0,15);
+
+		GoToXY(0, 15);
 		cout << "=================================================";
+
+
+
 		Sword.ShowImage();
 		Slime.Move(Sword);
 	}
